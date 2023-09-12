@@ -12,8 +12,9 @@ public class Main {
     CountsBySoH counts = new CountsBySoH();
     for(int i=0;i<presentCapacities.length;i++) //loop through battery capacities
     {
-      int cap=presentCapacities[i];
-      double soh=(double)cap/120.0*100.0; //calculate soh
+      int capacity=presentCapacities[i];
+      double soh=(double)capacity/120.0*100.0; //calculate soh
+      
       //update counts according to the conditions
       if(soh>80)
       {
