@@ -9,8 +9,8 @@ public class Main {
 
   static CountsBySoH countBatteriesByHealth(int[] presentCapacities) {
     CountsBySoH counts = new CountsBySoH();
-    for(int i=0;i<presentCapacities;i++){
-      int cap=prsentCapacities[i];
+    for(int i=0;i<presentCapacities.length;i++){
+      int cap=presentCapacities[i];
       double soh=(double)cap/120.0*100.0;
       if(soh>80){
         counts.healthy++;
